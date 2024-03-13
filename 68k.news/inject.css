@@ -1,0 +1,58 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+	margin: auto;
+	max-width: 48rem;
+}
+
+body center:nth-of-type(2) {
+    display: none;
+}
+
+body center h1 i, body center h1 b {
+    color: var(--h-color);
+    font-style: normal;
+}
+
+body > small > center > a {
+	margin-inline: 0.2rem;
+}
+
+body > h3 > font > a {
+	font-size: 1.25rem;
+	letter-spacing: 0.025em;
+}
+
+hr, p:has(small) {
+	display: none;
+}
+
+h3 {
+	margin-block-start: 1.6em;
+	margin-block-end: 0em;
+}
+
+a, a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:focus, a:focus-visible {
+	outline: none;
+}
+
+body > small > center > a:focus,
+body > small > center > a:focus-visible,
+li:has(a:focus, a:focus-visible),
+h3:has(a:focus, a:focus-visible)
+{
+	outline: var(--outline);
+}
+
+ol {
+    list-style-type: disc;
+    padding-inline-start: 2em;
+}

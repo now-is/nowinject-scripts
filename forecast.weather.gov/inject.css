@@ -1,0 +1,148 @@
+#additional_forecasts,
+#current_conditions_station,
+#current-conditions > div.panel-heading > div > b,
+#detailed-forecast > div.panel-heading,
+#fcst-search,
+#footer670,
+#news-items,
+#page-header,
+#quickLinks,
+#right-side-data,
+#seven-day-forecast,
+main > nav,
+footer,
+hr,
+.header670
+{
+	display: none;
+}
+
+.container,
+div:has(> #detailed-forecast)
+{
+	width: 100%;
+}
+
+body,
+main,
+.panel,
+.panel-default > .panel-heading,
+.panel-title,
+.yellow
+{
+	background-color: var(--bg-color);
+	background-image: none;
+	border-color: #333;
+	color: hsl(45deg 70% 50%);
+	line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+}
+
+.panel-danger > .panel-heading,
+.panel-danger > .panel-heading > .panel-title,
+.panel-danger > .panel-body
+{
+	background-image: none;
+	background-color: #300;
+	border-color: #300;
+}
+
+.panel-body a.anchor-hazards {
+	color: hsl(45deg 70% 50%);
+}
+
+body,
+#current-conditions-body
+{
+	font-size: 16px;
+}
+
+main {
+	-webkit-box-shadow: initial;
+	box-shadow: initial;
+	margin-block-start: 1em;
+}
+
+b,
+strong
+{
+	font-weight: 500; /* is available! */
+	letter-spacing: calc(3 * var(--letter-spacing));
+}
+
+img.pull-left {
+	opacity: 60%;
+}
+
+#content {
+	padding: 0px 20px;
+}
+
+#content > h3:first-of-type {
+	color: var(--bg-color);
+}
+
+#current_conditions-summary {
+	margin-inline-end: 50px;
+}
+
+#current_conditions-summary p.myforecast-current-lrg {
+	font-size: 36px;
+	line-height: 60px;
+}
+
+#current_conditions_detail {
+	font-size: 14px;
+	width: auto;
+}
+
+#detailed-forecast-body .forecast-text {
+	font-size: 14px;
+}
+
+#topnav670 {
+	margin-block-start: 1rem;
+	margin-inline-start: 20px;
+	position: static;
+	width: auto;
+}
+
+.row-even {
+	background-color: var(--bg-color);
+}
+
+.row-odd {
+	background-color: #181818;
+}
+
+input {
+	--input-color: hsl(45 100% 50% / 1);
+
+	background: var(--bg-color);
+	border: 0;
+	box-shadow: inset 0px -1px 0px 0px var(--input-color);
+	color: var(--input-color);
+	padding: 2px 4px;
+}
+
+input[type="submit"] {
+	border-radius: 2px;
+	box-shadow: inset 0px 0px 1px 1px;
+}
+
+input:focus-visible {
+	box-shadow: inset 0px -1px 0px 0px hsl(45 40% 70% / 1);
+	outline: 0px;
+}
+
+.searchinput, .searchinput select, .searchinput input {
+	font-size: 1em;
+}
+
+.warn {
+	color: #ffcc00;
+}
+
+a {
+	color: #ffcc77;
+}

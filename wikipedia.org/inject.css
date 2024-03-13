@@ -1,0 +1,61 @@
+body {
+	--underline-color: #333;
+}
+
+body,
+.mw-body,
+.mw-page-container,
+.infobox,
+.mwe-popups-container
+{
+	color: var(--color);
+	background-color: var(--bg-color);
+	letter-spacing: var(--letter-spacing);
+}
+
+.mw-parser-output .ombox,
+li.gallerybox div.thumb
+{
+	background-color: #181818;
+	border: 1px solid var(--underline-color);
+}
+
+.vector-toc {
+	background-color: var(--bg-color);
+}
+
+.vector-toc-link {
+	color: var(--color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--h-color);
+	border-color: var(--underline-color);
+}
+
+.header-container,
+.vector-header-container
+{
+	display: none;
+}
+
+.vector-page-titlebar,
+.vector-page-toolbar-container
+{
+	box-shadow: 0 1px var(--underline-color);
+}
+
+.vector-feature-zebra-design-disabled #vector-toc-pinned-container .vector-toc::after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(12,12,12,1));
+}
+
+figure[typeof~='mw:File/Thumb'],
+figure[typeof~='mw:File/Thumb'] > figcaption,
+figure[typeof~='mw:File/Thumb'] > :not(figcaption) .mw-file-element,
+figure[typeof~='mw:File/Frame'],
+figure[typeof~='mw:File/Frame'] > figcaption,
+figure[typeof~='mw:File/Frame'] > :not(figcaption) .mw-file-element
+{
+	background-color: var(--fig-bg-color);
+	border-color: var(--fig-border-color);
+}

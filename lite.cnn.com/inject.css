@@ -1,0 +1,46 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+	letter-spacing: var(--letter-spacing);
+	margin: auto;
+	max-width: 40rem;
+}
+
+a, a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:focus, a:focus-visible {
+	outline: none;
+}
+
+li.card--lite:has(a:focus, a:focus-visible) {
+	outline: var(--outline);
+}
+
+header.header--lite {
+	border-bottom: 0;
+	padding: 20px;
+	padding-block-end: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+	margin-block-start: 0;
+}
+
+li.card--lite {
+	padding-inline: 0;
+}
+
+p.title {
+	display: none;
+}
+
+footer {
+	border-top: 0px;
+}

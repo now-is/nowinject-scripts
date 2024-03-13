@@ -1,0 +1,29 @@
+body {
+	background-color: var(--bg-color);
+	color: var(--color);
+	font-family: var(--font-family);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height);
+}
+h1, h2, h3, h4, h5, h6 {
+	color: var(--h-color);
+	link-color: var(--h-link-color);
+	line-height: var(--h-line-height);
+	margin-block-end: var(--h-margin-block-end);
+	margin-block-start: var(--h-margin-block-start);
+}
+strong, b {
+	color: var(--strong-color);
+}
+a, a:visited, a:hover {
+	color: var(--link-color);
+}
+a:focus {
+	outline: var(--outline);
+}
+code, blockquote {
+	margin-inline-start: var(--q-margin-inline-start);
+}
+blockquote {
+	border-inline-start: var(--q-border-inline-start);
+}

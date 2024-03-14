@@ -6,11 +6,45 @@ body,
 .mw-body,
 .mw-page-container,
 .infobox,
-.mwe-popups-container
+.vector-pinned-container,
+.vector-dropdown .vector-dropdown-content,
+.vector-dropdown-label-text,
+.vector-page-titlebar::after
 {
 	color: var(--color);
 	background-color: var(--bg-color);
 	letter-spacing: var(--letter-spacing);
+}
+
+.vector-pinnable-header,
+.vector-pinnable-element .vector-menu-heading
+{
+	border-bottom-color: var(--underline-color);
+}
+
+.vector-pinnable-header-toggle-button
+{
+	color: var(--color);
+	background-color: var(--fig-bg-weak-color);
+}
+
+.cdx-button:enabled.cdx-button--weight-quiet,
+.cdx-button.cdx-button--fake-button--enabled.cdx-button--weight-quiet
+{
+	background-color: var(--bg-color);
+	border-color: var(--underline-color);
+}
+
+.mwe-popups-container,
+.mwe-popups-extract
+{
+	color: var(--color);
+	background-color: var(--fig-bg-color);
+}
+
+.mwe-popups-extract::after
+{
+	background-image: linear-gradient(90deg, transparent 0%, var(--fig-bg-color) 50%) !important;
 }
 
 .mw-parser-output .ombox,
@@ -54,8 +88,10 @@ figure[typeof~='mw:File/Thumb'] > figcaption,
 figure[typeof~='mw:File/Thumb'] > :not(figcaption) .mw-file-element,
 figure[typeof~='mw:File/Frame'],
 figure[typeof~='mw:File/Frame'] > figcaption,
-figure[typeof~='mw:File/Frame'] > :not(figcaption) .mw-file-element
+figure[typeof~='mw:File/Frame'] > :not(figcaption) .mw-file-element,
+.cdx-button:enabled,
+.cdx-button.cdx-button--fake-button--enabled
 {
-	background-color: var(--fig-bg-color);
+	background-color: var(--fig-bg-weak-color);
 	border-color: var(--fig-border-color);
 }
